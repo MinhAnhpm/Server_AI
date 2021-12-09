@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <link rel="stylesheet" href="/static/styles/login-register.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="/static/submit-form.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+
+
+    <body>
+      <div class="cotn_principal">
+        <div class="cont_centrar">
+          <div class="cont_login">  
+            <div class="cont_info_log_sign_up">
+              <div class="col_md_login">
+                <div class="cont_ba_opcitiy">
+                  <h2>LOGIN</h2>  
+                  <p>Go to the main page if you've got an account.</p> 
+                  <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+                </div>
+            </div>
+      
+              <div class="col_md_sign_up">
+                <div class="cont_ba_opcitiy">
+                  <h2>SIGN UP</h2>
+                  <p>Register with us.</p><br>
+                  <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+                </div>
+              </div>
+            </div>
+            
+              
+            <div class="cont_back_info">
+              <div class="cont_img_back_grey">
+                  <img src="bgrd.jpg" alt="" />
+              </div>
+            </div>
+      
+            <div class="cont_forms" >
+              <div class="cont_img_back_">
+                 <img src="bgrd.jpg" alt="" />
+              </div>
+              <div class="cont_form_login">
+                <a href="#" onclick="ocultar_login_sign_up()" ><i class="fa fa-close btn"></i></a>
+                <h2>LOGIN</h2>
+                <input type="text" placeholder="Email" id="uEmail"/>
+                <input type="password" placeholder="Password" id="uPwd"/>
+                <a href="" id="forg_pwd">Forgot Password</a>
+                <!-- <button class="btn_login" onclick="cambiar_login()">LOGIN</button> -->
+                <button class="btn_login" onclick="validate_login()">LOGIN</button>
+              </div>
+            
+              <div class="cont_form_sign_up">
+                <a href="#" onclick="ocultar_login_sign_up()"><i class="fa fa-close btn"></i></a>
+                <h2>SIGN UP</h2>
+                <input type="email" placeholder="Email" id="sEmail"/>
+                <input type="text" placeholder="User" id="sUserName"/>
+                <input type="password" placeholder="Password" id="sPwd"/>
+                <input type="password" placeholder="Confirm Password" id="sCfPwd"/>
+                <input type="text" placeholder="Phone number" id="sPhone"/>
+                <!-- <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button> -->
+                <button class="btn_sign_up" onclick="validate_sign_up()">SIGN UP</button>
+              </div>
+            </div>
+          </div>       
+        </div> 
+      </div>
+      
+      
+    </body>
+</html>
