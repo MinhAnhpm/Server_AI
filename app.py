@@ -70,6 +70,7 @@ def upload_file():
 		prediction_name = get_prediction(img_bytes)
 		url_name = check_image(prediction_name)    # tra ve link anh tĩnh để truyền vào result.html
 		return render_template('result.html.',url_image =url_name, description=prediction_name)
+		# return jsonify(prediction_name)
 
 if __name__ == "__main__":
     app.run(debug=True)
